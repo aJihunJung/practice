@@ -86,11 +86,18 @@
   
 ## rails command
   ```nohighlight
-  1. rails server (=rails s)
-   - rails server 실행
-   - option
-    -e : default 개발환경
-    -p : port 설정
-    -b : ip Adress 설정
+  1. rails server (=rails s) : ruby 기반의 WEBrick 서버 실행
+    - option
+      + e : default 개발환경
+      + p : port 설정
+      + b : ip Adress 설정
+  2. rails generate (=rails g) : 템플릿을 이용해서 controller, moder등 을 생성
+    - generate controller example : rails generate controller test hello[action] [options]
+    - generate moder example : rails generate (scaffold) model test name:string phonenumber:interger
+      + scaffold를 사용하면 모델이 필요한 모든 것을 생성(migration, contoller, view etc)
+  
+  3. rake(ruby make) : 'Rakefile'을 이용하여 작업 목록인 .rake를 빌드한다.
+    - rake --tasks : 이용가능한 rake 작업목록
+    - rake about : ruby, rubygems등의 버전 세부항목 폴더 경로 등을 나타내준다.
   ```
 
