@@ -9,9 +9,22 @@
   - Object-oriented language
   ```
 
+## Rails?
+
+  ```nohighlight
+  - ruby로 작성된 웹어플리케이션 프레임 워크
+  - 3가지 철학
+    + DRY : "Don't Repeat Yourself" 같은 코드가 존재하면 좋지 않다.
+    + 설정보다 관습(Convention Over Confiuration) : 원하는 기능들에 대해 작은 단위의 설정 파일을 생성
+    + REST는 웹 어플리케이션의 최고의 패턴이다.
+  ```
+
 ## Ruby on Rails(RoR)
   ```nohighlight
   - 웹개발을 MVC 구조로 제작
+    + Model : 어플리케이션의 정보(data)를 다루는 규칙, 주로 DB와 상호 작용하는 규칙을 관리
+    + Controller : 컨트롤러는 모델과 뷰를 연결하는 역할
+    + View : 어플리케이션의 유저 인터페이스
   - 반복되는 코드를 공용으로 쓸 수 있다
   - 자주 만드는 코드를 generate를 사용해서 만든다.
   - Object Releation Mapping 기능 제공
