@@ -1,10 +1,12 @@
+<%= stylesheet_link_tag "practice.scss"%>
+
 <div id="wrap">
   <div id="header-region"><div><div id="header">
   <div id="header-section1">
     <div id="header-section1-main" class="navbar navbar-inverse">
       <div id="header-log" class="pull-left">
         <div class="navbar-header">
-          <a class="navbar-brand pull-left" href="">
+          <a class="navbar-brand pull-left" href="practice">
             <img src="/images/biz_korean.png">
             <span><font size="1"> (시범서비스)</font></span>
             <span><font size="2" color="red"></font></span>
@@ -28,9 +30,18 @@
   </div>
 </div>
 </div></div>
-  <div id="main-region"><div><div id="findidpw">
+  <div id="main-region"><div>
+  <div id="findidpw">
   <div class="row">
-    <div id="menu-region" class="col-sm-2"><div id="findidpw_menu"><div id="menu"> <div class="title">회원 가입</div> <div class="list-group"><div><a href="/#/signup" class="list-group-item">회원가입</a></div><div><a href="/#/findid" class="list-group-item active">아이디 / 비밀번호 확인</a></div></div></div></div></div>
+    <div id="menu-region" class="col-sm-2">
+    <div id="findidpw_menu">
+    <div id="menu"> <div class="title">회원 가입</div> <div class="list-group"><div><a href="signup" class="list-group-item">회원가입</a></div><div>
+    <a href="findid" class="list-group-item active">아이디 / 비밀번호 확인</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
 	<div id="service-region" class="col-sm-10">
 	  <div>
 	    <div id="header-title">아이디 / 비밀번호 확인</div>
@@ -38,7 +49,9 @@
 		  <img src="/images/id_key.png">
 			회원님의 이메일 주소를 입력해 주시면 해당 이메일로 아이디/비밀번호 정보를 보내드립니다.
 		</div>
-		<div id="findidpw_service_region"><div><div id="findidpw">
+		<div id="findidpw_service_region">
+    <div>
+    <div id="findidpw">
      <div class="row">
        <div class="col-sm-6">
         <div id="findid-region"><div><h3><b>아이디 찾기</b></h3>
@@ -94,3 +107,50 @@
   <div id="dialog-region"></div>
   <div id="push"></div>
 </div>
+
+<div id="footer-region"><div><div id="footer">
+  <div id="footer-ktlogo" class="pull-left">
+      <img src="/images/ktlogo.png">
+    </div>
+  <div class="row">
+    <div id="footer-link" class="col-sm-8">
+      <a href="http://www.kt.com/main.jsp" target="_blank" class="link_info">회사소개 </a>
+      <span>/</span>
+      <a href="http://www.kt.com/eng/main.jsp" target="_blank" class="link_info"> ENGLISH</a>
+      <a href="http://inside.olleh.com/html/infoView.asp?code=HBA00&amp;sub=02&amp;LnbCode=AC0" class="link_info">이용약관</a>
+      <a href="http://inside.olleh.com/html/infoView.asp?code=HC000" class="link_info">법적고지</a>
+      <a href="http://inside.olleh.com/html/infoView.asp?code=HD000" class="link_info">개인정보취급방식</a>
+      <a href="http://inside.olleh.com/html/infoView.asp?code=HE000" class="link_info">청소년 보호정책</a>
+      <a href="http://help.olleh.com/pc/service/appcenter/MobileCenter.jsp" class="link_info">문의/안내처</a>
+      <a href="http://www.olleh.com/html/WebAccessibility/Info.asp" class="link_info">웹접근성 도움말</a>
+      <div id="info">
+        <span>(주)케이티 대표이사 황창규</span>
+        <span>&nbsp;&nbsp;&nbsp;사업자등록번호 : 102-81-42945
+        </span><span>&nbsp;&nbsp;&nbsp;통신판매업신고 : 2002-경기성남-0048</span><br>
+        <span>주소 : 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</span>
+        <span>&nbsp;&nbsp;&nbsp;TEL : 국번없이 100</span><br>
+        <span>Copyright ⓒ2015 kt corp. All rights reserved.
+      </span></div>
+    </div>
+
+    <div id="help-desk" class="col-sm-4">
+      <div class="line1 row">
+        <div class="col-sm-12">고객지원센터정보</div>
+      </div>
+      <div class="line2 row">
+        <div class="col-sm-3">
+          <img src="/images/img_icon_4.png">
+        </div>
+        <div class="col-sm-9">
+          <span>Tel. <span class="span-red">080-2580-007</span></span><br>
+          <span>평일: 09:00 ~ 18:00</span>
+          <span>/토요일: 09:00 ~ 13:00</span><br>
+          <span>(일, 공휴일 휴무 입니다)</span><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- release version -->
+<span style="font-size:x-small; font-style: italic; margin:0; color:white;">ver 0.3.4</span>
+</div></div>
