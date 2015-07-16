@@ -25,9 +25,14 @@
   // 필요한 라이브러리 설치
   $ sudo apt-get install git curl libcurl4-openssl-dev libpq-dev nodejs -y
   
-  //rvm 설치
+  //rvm(ruby version manager) 설치
   $ gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3 
   $ \curl -L https://get.rvm.io | bash -s stable
+    * RVM 설치 방법에는 2가지가 있다.
+      - single user install
+       + 설치한 유저에게만 rvm이 설치
+       + 설치한 rvm은 해당유저만 사용가능하고, 다른 유저가 사용할 수 없다.
+       + rvm은 설치한 유저의 홈 디렉토리의 .rvm폴더($HOME/.rmv)에 설치된다.(rvm 으로 설치하는 ruby, gem등도 모두  해당 폴더에 저장)
   
   //rvm access
   $ source ~/.rvm/scripts/rvm
