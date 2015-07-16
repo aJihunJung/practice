@@ -30,9 +30,15 @@
   $ \curl -L https://get.rvm.io | bash -s stable
     * RVM 설치 방법에는 2가지가 있다.
       - single user install
-       + 설치한 유저에게만 rvm이 설치
-       + 설치한 rvm은 해당유저만 사용가능하고, 다른 유저가 사용할 수 없다.
-       + rvm은 설치한 유저의 홈 디렉토리의 .rvm폴더($HOME/.rmv)에 설치된다.(rvm 으로 설치하는 ruby, gem등도 모두  해당 폴더에 저장)
+        + 설치한 유저에게만 rvm이 설치
+        + 설치한 rvm은 해당유저만 사용가능하고, 다른 유저가 사용할 수 없다.
+        + rvm은 설치한 유저의 홈 디렉토리의 .rvm폴더($HOME/.rmv)에 설치된다.(rvm 으로 설치하는 ruby, gem등도 모두  해당 폴더에 저장)
+        + root계정으로 single user install을 할 수 없다.
+      
+      - multi user install
+        + /usr/local/rvm/에 모든 rvm, ruby, gem이 설치된다.
+        + 한 유저가 설치한 ruby, gem이 시스템 전체에공유된다.
+        + rvm그룹의 유저만 새루비 또는 gem을 설치할 수 있다.
   
   //rvm access
   $ source ~/.rvm/scripts/rvm
