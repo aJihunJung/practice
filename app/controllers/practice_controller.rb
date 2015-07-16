@@ -2,7 +2,10 @@ class PracticeController < ApplicationController
 	def new
 	end
 
-	def page2
+	def findid
+	end
+
+	def signup
 	end
 
 	def index

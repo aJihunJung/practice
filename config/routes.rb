@@ -13,8 +13,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   
-  match 'test' => 'practice#page2', :via => :get
-  match 'signup' => 'practice#new', :via => :get
+  match 'findid' => 'practice#findid', :via => :get
+  match 'signup' => 'practice#signup', :via => :get
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
