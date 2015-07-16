@@ -24,18 +24,29 @@
   $ sudo apt-get update
   // 필요한 라이브러리 설치
   $ sudo apt-get install git curl libcurl4-openssl-dev libpq-dev nodejs -y
-  $ gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3 
+  
   //rvm 설치
+  $ gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3 
   $ \curl -L https://get.rvm.io | bash -s stable
+  
+  //rvm access
   $ source ~/.rvm/scripts/rvm
+  
   //Dependence 해결 - ruby, rails등이 OS따라 의존성 업데이트
   $ rvm requirements
+  
   //ruby install
-  $ rvm install 2.1.0 (rvm reinstall 2.1.0 : 기존에 설치된 바이너리 삭제후 재설치)
+  $ rvm install 2.1.0 [version] (rvm reinstall 2.1.0 : 기존에 설치된 바이너리 삭제후 재설치)
   $ rvm use 2.1.0 --default
+  
+  //gem update
   $ rvm rubygems current
+  
   //rails 설치
   $ gem install --no-ri --no-rdoc rails
+    - 설치된 rails version 확인 : $ gem list --local rails
+    - 원하는 rails version 설치 : $ gem install rails --version [version]
+    - '--no-ri' '--no-rdoc' default setting : vi ~/.gemrc -> gem: --no-ri --no-rdoc 
   ```
 
 ## How to craete new project
