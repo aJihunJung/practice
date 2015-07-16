@@ -26,23 +26,26 @@
   $ sudo apt-get install git curl libcurl4-openssl-dev libpq-dev nodejs -y
   
   //rvm(ruby version manager) 설치
-  $ gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3 
-  $ \curl -L https://get.rvm.io | bash -s stable
     * RVM 설치 방법에는 2가지가 있다.
       - single user install
-        + 설치한 유저에게만 rvm이 설치
-        + 설치한 rvm은 해당유저만 사용가능하고, 다른 유저가 사용할 수 없다.
-        + rvm은 설치한 유저의 홈 디렉토리의 .rvm폴더($HOME/.rmv)에 설치된다.(rvm 으로 설치하는 ruby, gem등도 모두  해당 폴더에 저장)
-        + root계정으로 single user install을 할 수 없다.
-      
+        $ gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3 
+        $ \curl -L https://get.rvm.io | bash -s stable // root가 아닌 일반 유저로 명령을 실행한다.
+        $ source ~/.rvm/scripts/rvm // rvm 스크립트를 현재 쉘에 로드
+          + 설치한 유저에게만 rvm이 설치
+          + 설치한 rvm은 해당유저만 사용가능하고, 다른 유저가 사용할 수 없다.
+          + rvm은 설치한 유저의 홈 디렉토리의 .rvm폴더($HOME/.rmv)에 설치된다.(rvm 으로 설치하는 ruby, gem등도 모두  해당 폴더에 저장)
+          + root계정으로 single user install을 할 수 없다.
+
       - multi user install
-        + /usr/local/rvm/에 모든 rvm, ruby, gem이 설치된다.
-        + 한 유저가 설치한 ruby, gem이 시스템 전체에공유된다.
-        + rvm그룹의 유저만 새루비 또는 gem을 설치할 수 있다.
-  
-  //rvm access
-  $ source ~/.rvm/scripts/rvm
-  
+        $ \curl -L https://get.rvm.io | sudo bash -s stable // 일반 유저로 명령 실행
+        $ sudo adduser [username] rvm // rvm을 사용할 유저를 rvm 그룹에 추가
+                                      // 일반 유저는 /user/local/rvm에 write 권한이 없기 때문에, rvm 그룹에 추가해서 권한을 부여해야 한다.
+        $ exec su -l $USER // 현재 쉘은 그룹에 추가하기 이전에 띄운 쉘이라 다시 로드
+        $ source /etc/profile.d/rvm.hs // rvm 스트립트 다시 로드
+          + /usr/local/rvm/에 모든 rvm, ruby, gem이 설치된다.
+          + 한 유저가 설치한 ruby, gem이 시스템 전체에공유된다.
+          + rvm그룹의 유저만 새루비 또는 gem을 설치할 수 있다.
+
   //Dependence 해결 - ruby, rails등이 OS따라 의존성 업데이트
   $ rvm requirements
   
