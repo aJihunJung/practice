@@ -22,14 +22,19 @@
 
   ```nohighlight
   $ sudo apt-get update
+  // 필요한 라이브러리 설치
   $ sudo apt-get install git curl libcurl4-openssl-dev libpq-dev nodejs -y
   $ gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3 
+  //rvm 설치
   $ \curl -L https://get.rvm.io | bash -s stable
   $ source ~/.rvm/scripts/rvm
+  //Dependence 해결 - ruby, rails등이 OS따라 의존성 업데이트
   $ rvm requirements
-  $ rvm install 2.1.0
+  //ruby install
+  $ rvm install 2.1.0 (rvm reinstall 2.1.0 : 기존에 설치된 바이너리 삭제후 재설치)
   $ rvm use 2.1.0 --default
   $ rvm rubygems current
+  //rails 설치
   $ gem install --no-ri --no-rdoc rails
   ```
 
