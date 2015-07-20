@@ -39,6 +39,7 @@
   $ sudo apt-get install git curl libcurl4-openssl-dev libpq-dev nodejs -y
   
   //rvm(ruby version manager) 설치
+    * RVM은 Ruby Version Manager의 약자로, 여러 버전의 루비를 쉽게 관리할 수 있게 해주는 스크립트입니다. 
     * RVM 설치 방법에는 2가지가 있다.
       - single user install
         $ gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3 
